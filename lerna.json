@@ -1,0 +1,19 @@
+{
+  "packages": [
+    "components/*",
+    "tools/*"
+  ],
+ 
+  "version": "independent",
+  "command": {
+    "add": {
+      "ignore": [
+        "" ]
+    },
+    "bootstrap": {
+      "nohoist": [
+        ""
+      ]
+    }
+  }
+}

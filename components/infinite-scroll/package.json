@@ -1,0 +1,49 @@
+{
+  "name": "@dynamic-loader-orxe-components/infinite-scroll",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Orxe Component",
+  "main": "dist/index.js",
+  "types": "dist/types",
+  "files": [
+    "dist"
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": "ORXe",
+  "scripts": {
+    "test": "jest",
+    "test:skipaxe": "jest \"^(.*/)*(.*\\.)*(spec)\\.ts$\"",
+    "test:coverage": "jest --coverage",
+    "prebuild": "rimraf dist",
+    "start": "run-p serve:webpack serve:sass-renderer",
+    "serve:webpack": "webpack-dev-server --config ../shared/components-base-utils/webpack.config.js --open",
+    "serve:sass-renderer": "npx sass-renderer",
+    "build:custom": "webpack --config ../shared/components-base-utils/webpack.config.js --progress=false --production --output-path bundle-dist/",
+    "build": "tsc",
+    "lint": "eslint --config  ../../.eslintrc.js --ignore-path ../../.eslintignore **/*.ts",
+    "lint:fix": "eslint --config  ../../.eslintrc.js --fix --ignore-path ../../.eslintignore **/*.ts"
+  },
+  "dependencies": {
+    "@orxe-culture/lit": "^3.0.6"
+  },
+  "devDependencies": {
+    "@orxe-devkit/sass-to-ts": "^1.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://packages.common.cnxloyalty.com/repository/npm-hosted/"
+  }
+}

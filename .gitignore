@@ -1,0 +1,64 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/dist-es2015
+/build
+/compiled
+components/**/dist/*
+components/**/dist-es2015/*
+/bundle
+bundle-dist
+/bundle-dist/**
+components/**/bundle/*
+/tmp
+/out-tsc
+/package-lock.json
+package-lock.json
+jest-html-report/
+/.history
+# dependencies
+/node_modules
+/coverage
+/*/node_modules/*
+components/**/node_modules/*
+tools/**/node_modules/*
+components/**/coverage/*
+.bitmap
+/tools/story-book/dist
+/tools/story-book/storybook-static
+
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+!.vscode/tasks.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+lerna-debug.log
+testem.log
+components/*/debug.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+#allure-reports
+/allure-results

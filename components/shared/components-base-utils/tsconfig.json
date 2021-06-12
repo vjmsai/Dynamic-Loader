@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../../components",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "types": [
+      "jest"
+    ],
+    "removeComments": true,
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "typedocOptions": {
+    "name": "Web Components",
+    "out": "docs",
+    "mode": "module",
+    "excludeNotDocumented": "true",
+    "readme": "./README.md",
+    "typeRoots": [
+      "../../node_modules/@types"
+    ]
+  }
+  }

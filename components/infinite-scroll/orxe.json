@@ -1,0 +1,8 @@
+{
+  "project": {
+    "version": "1.0.4",
+    "name": "@dynamic-loader-orxe-components/infinite-scroll",
+    "type": "lit-component",
+    "prefix": "orxe"
+  }
+}

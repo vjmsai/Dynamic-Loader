@@ -1,0 +1,8 @@
+{
+  "project": {
+    "version": "1.0.4",
+    "name": "@dynamic-loader-components/dynamic-loader",
+    "type": "lit-component",
+    "prefix": "litelement"
+  }
+}

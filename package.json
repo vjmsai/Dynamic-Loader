@@ -1,0 +1,53 @@
+{
+  "name": "dynamic-loader-components",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "author": "vjmsai",
+  "license": "ISC",
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint --config  ./.eslintrc.js --ignore-path ./.eslintignore \"components/**/*.ts\"",
+    "lint:fix": "eslint --config  ./.eslintrc.js --fix --ignore-path ./.eslintignore \"components/**/*.ts\"",
+    "prettier": "prettier --config ./prettier.config.js  \"components/**/*.ts\"",
+    "wca": "web-component-analyzer analyze components --outFile custom-elements.json"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "cross-env": "^6.0.3",
+    "lerna": "^3.20.2",
+    "rimraf": "^3.0.2",
+    "typedoc": "^0.16.11",
+    "typedoc-plugin-external-module-name": "^3.0.0",
+    "typedoc-plugin-markdown": "^2.2.17",
+    "typedoc-plugin-no-inherit": "^1.1.10",
+    "typescript": "3.8.3",
+    "web-component-analyzer": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^7.0.2",
+    "core-js": "^3.0.1",
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.2.1",
+    "storybook-theme-knob": "^0.0.8"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/typescript@3.1.39"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "extends": "../shared/components-base-utils/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declarationDir": "./dist/types"
+  },
+  "exclude": [
+    "node_modules/**",
+    "coverage/**",
+    "**/_test_/**",
+    "**/*+(.d|-css|constants|interface|types).ts",
+    "typings/**",
+    "**utils/**",
+    "**theme/**",
+    "**icons/**",
+    "**/*.spec.ts",
+    "**/*.axe.ts",
+    "dist/",
+    "dist-es2015/"
+  ]
+}
