@@ -1,5 +1,7 @@
-# Dynamic-Loader|
-Example usage 
+# Dynamic-Loader
+
+#Example usage 
+````bash
 <dynamic-loader
     events="submitted, searched"
     module-url="sample bundle url"
@@ -18,3 +20,4 @@ Example usage
     // Error UI
   </div>
 </dynamic-loader>
+````
